@@ -542,7 +542,7 @@ uglyURLs = false
     ######################################
     # KaTeX (chemical equation supported)
 
-    enableKaTeX = true
+    enableKaTeX = false
     # Note: *global settings*
     #       `katex` in post’s Front Matter
     #       has a higher priority than here
@@ -551,7 +551,7 @@ uglyURLs = false
     ######################################
     # MathJax (chemical equation supported)
 
-    enableMathJax = true
+    enableMathJax = false
     # Note: *global settings*
     #       `mathjax` in post’s Front Matter
     #       has a higher priority than here
@@ -577,7 +577,7 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
