@@ -12,7 +12,7 @@ copyright = "[RXRW.ME](https://rxrw.me)"
 theme = "meme"
 
 # `hugo new` automatically opened text editor
-newContentEditor = "vscode"
+newContentEditor = "code"
 
 # i18n
 defaultContentLanguage = "zh"
