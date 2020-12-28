@@ -185,55 +185,69 @@ uglyURLs = false
         weight = 1
         pre = "internal"
         post = "home"
+    # [[menu.main]]
+    #     url = "/posts/"
+    #     name = "文章"
+    #     weight = 2
+    #     pre = "internal"
+    #     post = "archive"
     [[menu.main]]
-        url = "/posts/"
-        name = "文章"
+        url = "/essay/"
+        name = "随笔"
         weight = 2
         pre = "internal"
-        post = "archive"
+        post = "grav"
+        identifier = "essay"
     [[menu.main]]
-        url = "/categories/"
-        name = "分类"
+        url = "/life/"
+        name = "生活"
         weight = 3
         pre = "internal"
-        post = "th"
+        post = "wpexplorer"
+        identifier = "life"
     [[menu.main]]
-        url = "/tags/"
-        name = "标签"
+        url = "/hope/"
+        name = "希望"
         weight = 4
         pre = "internal"
-        post = "tags"
+        post = "angle-up"
+        identifier = "hope"
+    [[menu.main]]
+        url = "/tech/"
+        name = "技术"
+        weight = 5
+        pre = "internal"
+        post = "th"
+        identifier = "tech"
+    # [[menu.main]]
+    #     url = "/categories/"
+    #     name = "分类"
+    #     weight = 3
+    #     pre = "internal"
+    #     post = "th"
+    # [[menu.main]]
+    #     url = "/tags/"
+    #     name = "标签"
+    #     weight = 4
+    #     pre = "internal"
+    #     post = "tags"
     [[menu.main]]
         url = "/about/"
         name = "关于"
-        weight = 5
+        weight = 6
         pre = "internal"
         post = "user-circle"
     [[menu.main]]
-        weight = 6
+        weight = 7
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 7
+        weight = 8
         identifier = "lang-switcher"
     [[menu.main]]
-        weight = 8
+        weight = 9
         identifier = "search"
         post = "search"
 
-    # [[menu.main]]
-    #     url = "/life/"
-    #     name = "生活"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "grav"
-    #     identifier = "life"
-    # [[menu.main]]
-    #     url = "/tech/"
-    #     name = "技术"
-    #     weight = 2
-    #     pre = "internal"
-    #     post = "wpexplorer"
-    #     identifier = "tech"
     # [[menu.main]]
     #     url = "/about/"
     #     name = "关于"
@@ -298,7 +312,7 @@ uglyURLs = false
     # 说明：对弹性布局的顶栏无效
 
     # 是否按文章分区高亮当前菜单项
-    activeInSection = false
+    activeInSection = true
     # 说明：如果开启，那么当某一文章的分区名是某
     #      一菜单项中的 `url` 时，该文章页面中
     #      的该菜单项也会被高亮
@@ -313,11 +327,11 @@ uglyURLs = false
     # 3. posts     文章摘要
     # 4. page      普通页面
 
-    homeLayout = "posts"
+    homeLayout = "poetry"
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = []
+    homePoetry = ["当我还没想好这一页写什么的时候","再次举起了那一杯酒","说好的明天过后","失意与失忆袭来的午后"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -384,12 +398,12 @@ uglyURLs = false
     # 分类页面
 
     # 是否开启树状布局
-    enableTree = true
+    enableTree = false
     # 注意：如果你设置 categoryBy 为
     # `sections`，则无法关闭树状布局
 
     # 是否显示文章标题
-    displayPosts = true
+    displayPosts = false
 
     # 是否显示每一分类下的文章数
     displayPostsCount = true
@@ -420,7 +434,7 @@ uglyURLs = false
     #      单位：em
 
     # 是否显示列表标题
-    displayListTitle = true
+    displayListTitle = false
 
     # 日期的格式
     listDateFormat = "01 月 02 日"
@@ -1322,3 +1336,79 @@ uglyURLs = false
     fofVideoWebm = ""
     fofVideoMp4 = ""
     # 说明：视频地址可留空（""）
+
+
+# 中文
+[languages.zh]
+    languageName = "🇨🇳"
+    contentDir = "content/zh"
+    weight = 1
+
+# 英文
+[languages.en]
+    languageName = "🇺🇸"
+    contentDir = "content/en"
+    weight = 2
+    languageCode = "en-US"
+    hasCJKLanguage = false
+    copyright = "[RXRW.ME](https://rxrw.me)"
+[languages.en.menu]
+    [[languages.en.menu.main]]
+        url = "/en/"
+        weight = 1
+        pre = "internal"
+        name = "HOME"
+        post = "home"
+        identifier = "home"
+    [[languages.en.menu.main]]
+        url = "/en/essay"
+        name = "ESSAY"
+        weight = 2
+        pre = "internal"
+        post = "grav"
+        identifier = "essay"
+    [[languages.en.menu.main]]
+        url = "/en/life"
+        name = "LIFE"
+        weight = 3
+        pre = "internal"
+        post = "wpexplorer"
+        identifier = "life"
+    [[languages.en.menu.main]]
+        url = "/en/tech"
+        name = "TECH"
+        weight = 4
+        pre = "internal"
+        post = "th"
+        identifier = "tech"
+    [[languages.en.menu.main]]
+        url = "/en/about/"
+        name = "ABOUT"
+        weight = 5
+        pre = "internal"
+        post = "user-circle"
+        identifier = "about"
+    [[languages.en.menu.main]]
+        weight = 6
+        identifier = "theme-switcher"
+    [[languages.en.menu.main]]
+        weight = 7
+        identifier = "lang-switcher"
+    [[menu.main]]
+        weight = 8
+        identifier = "search"
+        post = "search"
+[languages.en.params]
+    homePoetry = ["In the dark night", "Longing for a light of care", "In the daylight", "Desiring for the swallow of a black hole", "’Cause curiosity—seeks for what’s in the darkness"]
+    siteDescription = "Blog of reuixiy in English."
+    listDateFormat = "January 2"
+    fontFamilyTitle = "'Amstelvar', serif"
+    fontFamilyHeadings = "'Amstelvar', serif"
+    fontFamilyBody = "'Amstelvar', serif"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    lineHeight = 1.618
+    enableJustify = false
+    enableSmallCaps = true
+    enableEmphasisPoint = false
+    enableChinesePunctuationGlyphCorrection = false
+    customFooter = "[RXRW.ME](https://rxrw.me)"
