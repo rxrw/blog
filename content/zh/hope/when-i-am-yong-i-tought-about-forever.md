@@ -1,6 +1,7 @@
 ---
 title: "曾经，青春未已就以为永远"
 date: 2015-02-20T20:58:14+08:00
+lastmod: 2015-02-20T20:58:14+08:00
 tags : ["空间", "回忆"]
 draft: false
 slug : "when-i-am-yong-i-tought-about-forever"

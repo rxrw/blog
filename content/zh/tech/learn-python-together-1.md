@@ -1,6 +1,7 @@
 ---
 title: "（一）前言 —— 一起学python系列"
 date: 2019-08-23T20:22:14+08:00
+lastmod: 2019-08-23T20:22:14+08:00
 tags : ["python", "技术", "教程", "公众号"]
 draft: false
 slug : "learn-python-together-1"

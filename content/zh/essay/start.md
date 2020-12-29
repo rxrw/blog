@@ -1,6 +1,7 @@
 ---
 title: "序"
 date: 2014-05-25T01:42:14+08:00
+lastmod: 2014-05-25T01:42:14+08:00
 tags : ["空间", "梦想"]
 draft: false
 slug : "start"

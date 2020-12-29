@@ -1,6 +1,7 @@
 ---
 title: "Live To Death"
 date: 2015-12-20T23:38:14+08:00
+lastmod: 2015-12-20T23:38:14+08:00
 tags : ["启程", "空间"]
 draft: false
 slug : "live-to-death"
