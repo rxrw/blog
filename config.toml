@@ -196,29 +196,22 @@ uglyURLs = false
         name = "随笔"
         weight = 2
         pre = "internal"
-        post = "grav"
+        post = "map-marked-alt"
         identifier = "essay"
-    [[menu.main]]
-        url = "/life/"
-        name = "生活"
-        weight = 3
-        pre = "internal"
-        post = "wpexplorer"
-        identifier = "life"
     [[menu.main]]
         url = "/hope/"
         name = "希望"
         weight = 4
         pre = "internal"
-        post = "angle-up"
-        identifier = "hope"
+        post = "sunshine"
+        identifier = "archive"
     [[menu.main]]
         url = "/tech/"
         name = "技术"
         weight = 5
         pre = "internal"
-        post = "th"
-        identifier = "tech"
+        post = "draw-polygon"
+        identifier = "icon"
     # [[menu.main]]
     #     url = "/categories/"
     #     name = "分类"
@@ -1360,27 +1353,27 @@ uglyURLs = false
         name = "HOME"
         post = "home"
         identifier = "home"
-    [[languages.en.menu.main]]
-        url = "/en/essay"
-        name = "ESSAY"
-        weight = 2
-        pre = "internal"
-        post = "grav"
-        identifier = "essay"
-    [[languages.en.menu.main]]
-        url = "/en/life"
-        name = "LIFE"
-        weight = 3
-        pre = "internal"
-        post = "wpexplorer"
-        identifier = "life"
-    [[languages.en.menu.main]]
-        url = "/en/tech"
-        name = "TECH"
-        weight = 4
-        pre = "internal"
-        post = "th"
-        identifier = "tech"
+    # [[languages.en.menu.main]]
+    #     url = "/en/essay"
+    #     name = "ESSAY"
+    #     weight = 2
+    #     pre = "internal"
+    #     post = "grav"
+    #     identifier = "essay"
+    # [[languages.en.menu.main]]
+    #     url = "/en/life"
+    #     name = "LIFE"
+    #     weight = 3
+    #     pre = "internal"
+    #     post = "wpexplorer"
+    #     identifier = "life"
+    # [[languages.en.menu.main]]
+    #     url = "/en/tech"
+    #     name = "TECH"
+    #     weight = 4
+    #     pre = "internal"
+    #     post = "th"
+    #     identifier = "tech"
     [[languages.en.menu.main]]
         url = "/en/about/"
         name = "ABOUT"
@@ -1399,8 +1392,8 @@ uglyURLs = false
         identifier = "search"
         post = "search"
 [languages.en.params]
-    homePoetry = ["In the dark night", "Longing for a light of care", "In the daylight", "Desiring for the swallow of a black hole", "’Cause curiosity—seeks for what’s in the darkness"]
-    siteDescription = "Blog of reuixiy in English."
+    homePoetry = ["When I'm curious about you", "Time goes by like a butterfly", "No need to drink anymore", "The answer is always on my mind"]
+    siteDescription = "Sunshine Like A Star"
     listDateFormat = "January 2"
     fontFamilyTitle = "'Amstelvar', serif"
     fontFamilyHeadings = "'Amstelvar', serif"
@@ -1411,4 +1404,4 @@ uglyURLs = false
     enableSmallCaps = true
     enableEmphasisPoint = false
     enableChinesePunctuationGlyphCorrection = false
-    customFooter = "[RXRW.ME](https://rxrw.me)"
+    # customFooter = "[RXRW.ME](https://rxrw.me)"
