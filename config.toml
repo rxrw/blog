@@ -427,7 +427,7 @@ uglyURLs = false
     #      单位：em
 
     # 是否显示列表标题
-    displayListTitle = false
+    displayListTitle = true
 
     # 日期的格式
     listDateFormat = "01 月 02 日"
@@ -501,7 +501,7 @@ uglyURLs = false
     # Note: light or dark
 
     # 是否隐藏模式切换开关
-    hideThemeToggle = false
+    hideThemeToggle = true
     # 是否在首页隐藏模式切换开关
     hideThemeToggleInHome = false
     # 说明：如果开启了深色模式，即使你隐藏了开关，
@@ -1211,7 +1211,7 @@ uglyURLs = false
     # 自定义页脚（支持 Markdown）
     customFooter = ""
 
-    displayBusuanziSiteUVAndPV = true
+    displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "本站访问量"

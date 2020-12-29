@@ -1,6 +1,7 @@
 ---
 title: "等到红叶落尽｀凛冬将至"
 date: 2014-11-04T02:15:14+08:00
+lastmod: 2014-11-04T02:15:14+08:00
 tags : ["空间", "梦想", "启程"]
 draft: false
 slug : "wait-for-the-autumn-and-winter"

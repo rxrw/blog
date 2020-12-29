@@ -1,6 +1,7 @@
 ---
 title: "把时间留给回忆"
 date: 2013-09-01T21:40:14+08:00
+lastmod: 2013-09-01T21:40:14+08:00
 tags : ["归档", "回忆", "空间"]
 draft: false
 slug : "bring-time-to-memory"

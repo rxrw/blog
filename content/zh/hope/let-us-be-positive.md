@@ -1,6 +1,7 @@
 ---
 title: "生活中多一点正能量不好吗"
 date: 2015-06-18T22:49:14+08:00
+lastmod: 2015-06-18T22:49:14+08:00
 tags : ["空间", "梦想"]
 draft: false
 slug : "let-us-be-positive"

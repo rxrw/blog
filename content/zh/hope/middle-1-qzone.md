@@ -1,6 +1,7 @@
 ---
 title: "初一、军训"
 date: 2010-08-04T08:53:14+08:00
+lastmod: 2010-08-04T08:53:14+08:00
 tags : ["回忆", "空间"]
 draft: false
 slug : "middle-1-qzone"

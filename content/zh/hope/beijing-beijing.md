@@ -1,6 +1,7 @@
 ---
 title: "北京，北京"
 date: 2013-09-19T20:55:14+08:00
+lastmod: 2013-09-19T20:55:14+08:00
 tags : ["回忆", "空间"]
 draft: false
 slug : "beijing-beijing"
