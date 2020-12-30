@@ -196,21 +196,21 @@ uglyURLs = false
         name = "随笔"
         weight = 2
         pre = "internal"
-        post = "map-marked-alt"
+        post = "note"
         identifier = "essay"
     [[menu.main]]
         url = "/hope/"
         name = "希望"
         weight = 4
         pre = "internal"
-        post = "sunshine"
+        post = "gem"
         identifier = "archive"
     [[menu.main]]
         url = "/tech/"
         name = "技术"
         weight = 5
         pre = "internal"
-        post = "draw-polygon"
+        post = "code"
         identifier = "icon"
     # [[menu.main]]
     #     url = "/categories/"
@@ -229,7 +229,7 @@ uglyURLs = false
         name = "关于"
         weight = 6
         pre = "internal"
-        post = "user-circle"
+        post = "question"
     [[menu.main]]
         weight = 7
         identifier = "theme-switcher"
@@ -497,11 +497,11 @@ uglyURLs = false
 
     enableDarkMode = true
 
-    defaultTheme = "dark"
+    defaultTheme = "light"
     # Note: light or dark
 
     # 是否隐藏模式切换开关
-    hideThemeToggle = true
+    hideThemeToggle = false
     # 是否在首页隐藏模式切换开关
     hideThemeToggleInHome = false
     # 说明：如果开启了深色模式，即使你隐藏了开关，
@@ -669,10 +669,10 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    googleAdClient = ""
+    googleAdClient = "ca-pub-3494628741098434"
 
     ## Auto Ads
-    enableGoogleAutoAds = false
+    enableGoogleAutoAds = true
 
     ## Ad Units
     enableGoogleAdUnits = false
