@@ -324,7 +324,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["当我还没想好这一页写什么的时候","再次举起了那一杯酒","说好的明天过后","失意与失忆袭来的午后"]
+    homePoetry = ["与你相遇的那一瞬间", "时间匆匆如旅", "而你的双眸代替了沉默", "就像一切回到了起点"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -1089,10 +1089,10 @@ uglyURLs = false
 
     shareOnTwitter = true
     shareOnFacebook = true
-    shareOnLinkedIn = true
-    shareOnTelegram = true
+    shareOnLinkedIn = false
+    shareOnTelegram = false
     shareOnWeibo = true
-    shareOnDouban = true
+    shareOnDouban = false
     shareOnQQ = true
     shareOnQzone = true
 
@@ -1111,7 +1111,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 相关文章数
-    relatedPostsNumber = 5
+    relatedPostsNumber = 3
 
     # 相关文章标题右边的图标
     relatedPostsIcon = "plus-circle"
@@ -1190,20 +1190,20 @@ uglyURLs = false
     displayFooterInHome = true
 
     # 是否显示版权符号（©）
-    displayCopyrightSymbol = true
+    displayCopyrightSymbol = false
 
     # 是否显示站点的创建年份
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "heart"
+    iconBetweenYearAndAuthor = "arrow-right"
     # 图标颜色
     iconColor = "#f06292"
     # 是否开启图标的跳动效果
     iconAnimation = true
 
     # 是否显示 Hugo 和 MemE 的链接
-    displayPoweredBy = true
+    displayPoweredBy = false
 
     # 是否显示站点的版权信息
     displaySiteCopyright = true
@@ -1267,7 +1267,7 @@ uglyURLs = false
     enableFingerprint = true
 
     # 是否开启子资源完整性验证
-    enableSRI = false
+    enableSRI = true
     # 说明：开启子资源完整性验证后，该策略将使
     #      MemE 的 CSS 和 JS 在像谷歌翻译这样
     #      的第三方网站上被禁止。为了避免开启后
@@ -1392,7 +1392,7 @@ uglyURLs = false
         identifier = "search"
         post = "search"
 [languages.en.params]
-    homePoetry = ["When I'm curious about you", "Time goes by like a butterfly", "No need to drink anymore", "The answer is always on my mind"]
+    homePoetry = ["When I'm curious about you", "Time goes by like a butterfly", "No need to think anymore", "The answer is always on my mind"]
     siteDescription = "Sunshine Like A Star"
     listDateFormat = "January 2"
     fontFamilyTitle = "'Amstelvar', serif"
