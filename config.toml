@@ -948,7 +948,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 分段样式（全局设置）
-    paragraphStyle = "margin"
+    paragraphStyle = "indent"
     # 说明：段间距式（margin）或段首缩排（indent）
     #      文章的 Front Matter 中的 `indent`
     #      的优先级高于此处
