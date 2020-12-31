@@ -28,6 +28,6 @@ date = "2020-12-28T22:25:00+08:00"
 ## 鸣谢
 
 不同于 `wordpress` ，包括 `hugo`在内的都是无偿提供的开源项目。
-本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 [vercel](https://vercel.com) 上，图片等媒体使用 [acexy](https://imgs.acexy.cn) 、sm.ms[https://sm.ms] 进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)
+本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 [vercel](https://vercel.com) 上，图片等媒体使用 [acexy](https://imgs.acexy.cn) 、sm.ms(https://sm.ms) 进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)
 
 没了，以后想到什么再更新什么吧。
