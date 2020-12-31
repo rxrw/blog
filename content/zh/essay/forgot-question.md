@@ -2,7 +2,7 @@
 title: "记性"
 date: 2020-12-22T23:51:04+08:00
 lastmod: 2020-12-22T23:51:04+08:00
-tags : ["随笔", "日常"]
+tags : [“小记”, "日常"]
 slug : "forgotten-question"
 description: ""
 toc: false # 是否开启目录
