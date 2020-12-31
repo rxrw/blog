@@ -1,6 +1,7 @@
 ---
 title: "如果你想学Coding II"
 date: 2018-08-22T15:41:36+08:00
+lastmod: 2018-08-22T15:41:36+08:00
 tags : ["技术", "公众号", "教程"]
 slug : "If-You-Want-to-Learn-Coding-2"
 description: "If You Want to Learn Coding 2"

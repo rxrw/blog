@@ -1,6 +1,7 @@
 ---
 title: "从 DCloud 到 React Native ( Weex 从入门到放弃 )"
 date: 2018-08-04T22:39:28+08:00
+lastmod: 2018-08-04T22:39:28+08:00
 tags : ["app", "技术", "react native", "weex", "前端", "公众号"]
 slug : "From-Dcloud-to-Weex"
 description: "From Dcloud to Weex"
