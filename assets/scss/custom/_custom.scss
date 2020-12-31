@@ -1,5 +1,13 @@
-.single .main-inner{
+.list .main-inner {
     width: 42em;
+}
+
+.main-inner .single {
+    width: 42em;
+}
+
+.header-inner.list {
+    max-width: 42em;
 }
 
 .header-inner {
