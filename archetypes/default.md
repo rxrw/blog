@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 tags : []
-slug : "{{ title }}"
+slug : "{{ .Name | title }}"
 description: "{{ replace .Name "-" " " | title }}"
 toc: false
 ---

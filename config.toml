@@ -280,11 +280,11 @@ uglyURLs = false
     # 品牌栏（在顶栏内）
 
     # 是否使用 SVG 图片
-    siteBrandSVG = false
+    siteBrandSVG = true
     # 如果是，请将你的 SVG 放到 `SVG.toml` 文
     # 件内，并配置以下项。单位：px。
-    siteBrandSVGWidth = 250
-    siteBrandSVGHeight = 100
+    siteBrandSVGWidth = 120
+    siteBrandSVGHeight = 32
     siteBrandSVGFill = "#fff"
     # 如果否，则会使用你的站点标题作为默认值，并
     # 以文字的形式显示，下方可配置字号和字色。字
@@ -501,9 +501,9 @@ uglyURLs = false
     # Note: light or dark
 
     # 是否隐藏模式切换开关
-    hideThemeToggle = true
+    hideThemeToggle = false
     # 是否在首页隐藏模式切换开关
-    hideThemeToggleInHome = true
+    hideThemeToggleInHome = false
     # 说明：如果开启了深色模式，即使你隐藏了开关，
     #      你的读者依然可能以深色模式阅读你的博
     #      客，如果该读者的系统设置为深色模式的
