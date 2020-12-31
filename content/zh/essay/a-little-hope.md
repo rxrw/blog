@@ -1,7 +1,7 @@
 ---
 title: "2020的一个小纠结"
 date: 2020-12-31T12:01:27+08:00
-tags : []
+tags : [“随笔”, "梦想", "希望"],
 slug : "a-little-hope"
 description: "A Little Hope"
 toc: false
