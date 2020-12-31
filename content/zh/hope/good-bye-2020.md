@@ -1,4 +1,11 @@
-# 永别2020
+---
+title: "永别2020"
+date: 2020-12-31T21:36:21+08:00
+tags : ["希望", "总结", "空间", "公众号"]
+slug : "good-bye-2020"
+description: ""
+toc: true
+---
 
 
 ![昨天拍的。跨年赶了个十五](https://i.loli.net/2020/12/31/hkM2aVRjL5IfsAS.jpg)
