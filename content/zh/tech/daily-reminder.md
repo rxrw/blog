@@ -10,7 +10,7 @@ toc: false
 这两天写了一个特别无聊的东西.. 
 
 可以通过ui界面生成想要的模块，然后添加快捷指令，设置自动化，然后就可以每天早晨听到了。效果如下：
-<video src="https://rxrw.oss-cn-beijing.aliyuncs.com/RPReplay_Final1610112394.mov?Expires=1610116723&OSSAccessKeyId=TMP.3KjJa3DZrc1AauFswAzkGnSAf3fL9PHKNMYerigRjprWivn7cjM6Jhckb9pJQgc1vVT8cG7U6m14EaV15BvBmi74k4bmNb&Signature=kR4gyNXM8RKIEyhMC1CC7qOuPJw%3D&response-content-type=application%2Foctet-stream" >
+<video src="https://rxrw.oss-cn-beijing.aliyuncs.com/RPReplay_Final1610112394.mov?Expires=1610116723&OSSAccessKeyId=TMP.3KjJa3DZrc1AauFswAzkGnSAf3fL9PHKNMYerigRjprWivn7cjM6Jhckb9pJQgc1vVT8cG7U6m14EaV15BvBmi74k4bmNb&Signature=kR4gyNXM8RKIEyhMC1CC7qOuPJw%3D&response-content-type=application%2Foctet-stream" controls>
 
 代码在此：[https://github.com/rxrw/daily_reminder](https://github.com/rxrw/daily_reminder)
 
