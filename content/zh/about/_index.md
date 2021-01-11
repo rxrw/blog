@@ -28,6 +28,10 @@ date = "2020-12-28T22:25:00+08:00"
 ## 鸣谢
 
 不同于 `wordpress` ，包括 `hugo`在内的都是无偿提供的开源项目。
-本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 [vercel](https://vercel.com) 上，图片等媒体使用 [acexy](https://imgs.acexy.cn) 、sm.ms(https://sm.ms) 进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)
+
+本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 ~~[vercel](https://vercel.com)~~ [`Github Pages`](https://pages.github.com) 上，使用 [CloudFlare](https://cloudflare.com) 进行安全处理。图片等媒体使用 [acexy](https://imgs.acexy.cn) 、[sm.ms](https://sm.ms) 、[gitee](https://gitee.com) 等进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)。
 
 没了，以后想到什么再更新什么吧。
+
+### 小补充
+在 `vercel` 上运行了一个周发现 `百度` 和 `Google` 对我的博客没什么兴趣.. 决定部署到 `github pages` 上了。
