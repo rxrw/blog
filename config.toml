@@ -58,7 +58,7 @@ uglyURLs = false
 
 # Modified date
 [frontmatter]
-    lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+    lastmod = ["lastmod", ":fileModTime", ":git", ":default"]
 
 # Markdown 渲染器
 [markup]
@@ -1020,10 +1020,10 @@ uglyURLs = false
     # 文章更新徽章
 
     # 是否开启
-    enablePostUpdatedBadge = true
+    enablePostUpdatedBadge = false
 
     # 是否显示（全局设置）
-    displayUpdatedBadge = true
+    displayUpdatedBadge = false
     # 说明：文章的 Front Matter 中的 `badge`
     #      的优先级高于此处
 
@@ -1037,7 +1037,7 @@ uglyURLs = false
     # 文章的 Git 版本信息
 
     # 是否开启
-    enablePostGitInfo = false
+    enablePostGitInfo = true
 
     # 是否显示（全局设置）
     displayPostGitInfo = false
@@ -1045,7 +1045,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = ""
+    repoURL = "https://github.com/rxrw/rxrw.me"
     # 编辑地址
     repoEditURL = ""
 
@@ -1067,7 +1067,7 @@ uglyURLs = false
     feedbackText = "Feedback"
 
     # 是否显示编辑链接
-    displayEditLink = true
+    displayEditLink = false
     # 编辑链接的图标
     editIcon = "edit"
     # 编辑链接的文本
