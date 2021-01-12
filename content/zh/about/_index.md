@@ -3,7 +3,7 @@ title = "ABOUT"
 date = "2020-12-28T22:25:00+08:00"
 +++
 
-作为一个互联网特定英文单词与符号的搬运和加工组合工程师，曾经也干过很多有趣的事情。很少产出一些文章。
+作为一个..互联网特定英文单词与符号的搬运和加工组合工程师..，曾经也干过很多有趣的事情。很少产出一些文章。
 
 高中或者大学的时候，偶尔在空间里写一些东西，再后来，也学着搭一些博客。
 
@@ -29,7 +29,7 @@ date = "2020-12-28T22:25:00+08:00"
 
 不同于 `wordpress` ，包括 `hugo`在内的都是无偿提供的开源项目。
 
-本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 ~~[vercel](https://vercel.com)~~ [`Github Pages`](https://pages.github.com) 上，使用 [CloudFlare](https://cloudflare.com) 进行安全处理。图片等媒体使用 [acexy](https://imgs.acexy.cn) 、[sm.ms](https://sm.ms) 、[gitee](https://gitee.com) 等进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)。
+本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 ~~[vercel](https://vercel.com)~~ [`Github Pages`](https://pages.github.com) 上，使用 [CloudFlare](https://cloudflare.com) 进行安全处理和 CDN 加速。图片等媒体使用 [acexy](https://imgs.acexy.cn) 、[sm.ms](https://sm.ms) 、[gitee](https://gitee.com) 等进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)。
 
 没了，以后想到什么再更新什么吧。
 
