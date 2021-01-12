@@ -1,7 +1,7 @@
 ---
 title: "一个崭新的博客"
 date: 2020-12-28T20:54:14+08:00
-tags : [“随笔”, "日常"]
+tags : ["随笔", "日常"]
 draft: false
 slug : "a-new-blogger"
 align: "left"
