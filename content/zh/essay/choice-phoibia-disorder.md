@@ -5,7 +5,6 @@ tags : ["随笔"]
 slug : "choice-phoibia-disorder"
 description: "Choice Phoibia Disorder"
 toc: false
-draft: true
 ---
 
 > 生存还是毁灭，这是一个问题。
