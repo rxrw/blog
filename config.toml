@@ -34,7 +34,7 @@ footnoteReturnLinkContents = "↩"
 enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # Number of items per page in paginated
 # lists (valid for the `posts` homepage
