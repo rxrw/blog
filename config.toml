@@ -549,7 +549,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableServiceWorker = false
+    enableServiceWorker = true
 
 
     ######################################
