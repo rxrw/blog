@@ -4,7 +4,7 @@
 baseURL = "https://rxrw.me/"
 title = "若星若望__"
 languageCode = "zh-CN"
-hasCJKLanguage = true
+hasCJKLanguage = false
 # Copyright information (Markdown supported)
 copyright = "[RXRW.ME](https://rxrw.me)"
 
@@ -16,7 +16,7 @@ newContentEditor = "code"
 
 # i18n
 defaultContentLanguage = "zh"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 # Pluralize titles in lists?
 pluralizeListTitles = false
@@ -227,9 +227,9 @@ uglyURLs = false
     [[menu.main]]
         weight = 7
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 8
-        identifier = "lang-switcher"
+    # [[menu.main]]
+    #     weight = 8
+    #     identifier = "lang-switcher"
     [[menu.main]]
         weight = 9
         identifier = "search"
