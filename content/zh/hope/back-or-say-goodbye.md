@@ -2,7 +2,7 @@
 title: "归·抑或是说再见"
 date: 2020-08-09T11:43:15+08:00
 lastmod: 2020-08-09T11:43:15+08:00
-tags : ["希望", "公众号", "随笔"]
+tags : ["希望", "公众号"]
 slug : "Back-or-Say-Goodbye"
 description: "Back or Say Goodbye"
 toc: false
