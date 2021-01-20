@@ -4,7 +4,7 @@
 baseURL = "https://rxrw.me/"
 title = "若星若望__"
 languageCode = "zh-CN"
-hasCJKLanguage = false
+hasCJKLanguage = true
 # Copyright information (Markdown supported)
 copyright = "[RXRW.ME](https://rxrw.me)"
 
