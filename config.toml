@@ -16,7 +16,7 @@ newContentEditor = "code"
 
 # i18n
 defaultContentLanguage = "zh"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 # Pluralize titles in lists?
 pluralizeListTitles = false
@@ -98,7 +98,7 @@ uglyURLs = false
     # Email
     email = "rxrw@me.com"
     # Motto or introduction
-    motto = "HELLO REUIXIY"
+    motto = "HELLO REUIXIY MY DEAR"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
@@ -206,18 +206,6 @@ uglyURLs = false
         pre = "internal"
         post = "code"
         identifier = "icon"
-    # [[menu.main]]
-    #     url = "/categories/"
-    #     name = "分类"
-    #     weight = 3
-    #     pre = "internal"
-    #     post = "th"
-    # [[menu.main]]
-    #     url = "/tags/"
-    #     name = "标签"
-    #     weight = 4
-    #     pre = "internal"
-    #     post = "tags"
     [[menu.main]]
         url = "/about/"
         name = "关于"
