@@ -192,13 +192,13 @@ uglyURLs = false
         pre = "internal"
         post = "note"
         identifier = "essay"
-    [[menu.main]]
-        url = "/hope/"
-        name = "希望"
-        weight = 4
-        pre = "internal"
-        post = "gem"
-        identifier = "archive"
+    # [[menu.main]]
+    #     url = "/hope/"
+    #     name = "希望"
+    #     weight = 4
+    #     pre = "internal"
+    #     post = "gem"
+    #     identifier = "archive"
     [[menu.main]]
         url = "/tech/"
         name = "技术"

@@ -1,11 +1,23 @@
-.header-inner.list{
+.header-inner.list {
     max-width: 42em;
 }
 
-.list .main-inner{
+.list .main-inner {
     width: 42em;
 }
 
-.home .poetry{
+.home .poetry {
     padding-top: 10em;
+}
+
+[data-theme="light"] {
+    .brand {
+        fill: rgb(85, 67, 67);
+    }
+}
+
+[data-theme="dark"] {
+    .brand {
+        fill: rgb(206, 206, 206);
+    }
 }
