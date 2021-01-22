@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2  # v2 does not have submodules option now
         with:
@@ -28,6 +28,6 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
           external_repository: rxrw/rxrw.github.io # Pages 远程仓库 
           publish_dir: "./public"
-          keep_files: false # remove existing files
-          publish_branch: website  # deploying branch
+          keep_files: true # remove existing files
+          publish_branch: built  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
