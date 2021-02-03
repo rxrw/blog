@@ -1,7 +1,9 @@
 ---
 title: "我们所做的选择和宇宙的分支 —— 浅谈平行宇宙"
 date: 2021-02-03T18:20:35+08:00
-draft: true
+tags : ["感想", "公众号", "平行宇宙", "选择恐惧症"]
+slug : "Parallel-Universie"
+description: "Talk About Choice And Parallel Universie"
 ---
 
 > 在某处另一个你留下了
