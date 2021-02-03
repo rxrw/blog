@@ -6,7 +6,7 @@ title = "若星若望__"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # Copyright information (Markdown supported)
-copyright = "[RXRW.ME](https://rxrw.me)"
+copyright = "Copyright [RXRW.ME](https://rxrw.me) with Heartbeat. All rights reserved."
 
 # Name of theme
 theme = "meme"
@@ -19,7 +19,7 @@ defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 
 # Pluralize titles in lists?
-pluralizeListTitles = false
+pluralizeListTitles = true
 
 # The length of text in words to show in summary
 summaryLength = 42
@@ -34,7 +34,7 @@ footnoteReturnLinkContents = "↩"
 enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 # Number of items per page in paginated
 # lists (valid for the `posts` homepage
@@ -43,7 +43,7 @@ paginate = 10
 
 # URL related
 disablePathToLower = false
-relativeURLs = false
+relativeURLs = true
 uglyURLs = false
 
 # URL structure
@@ -82,7 +82,7 @@ uglyURLs = false
             xHTML = false
     [markup.highlight]
         codeFences = true
-        guessSyntax = false
+        guessSyntax = true
         lineNos = true
         lineNumbersInTable = true
         noClasses = false
@@ -98,7 +98,7 @@ uglyURLs = false
     # Email
     email = "rxrw@me.com"
     # Motto or introduction
-    motto = "HELLO REUIXIY MY DEAR"
+    motto = "啊这"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
@@ -108,7 +108,7 @@ uglyURLs = false
 
 # 相关文章
 [related]
-    threshold = 80
+    threshold = 90
     includeNewer = true
     toLower = true
     [[related.indices]]
@@ -365,7 +365,7 @@ uglyURLs = false
     # 分类页面
 
     # 是否开启树状布局
-    enableTree = false
+    enableTree = true
     # 注意：如果你设置 categoryBy 为
     # `sections`，则无法关闭树状布局
 
@@ -1019,7 +1019,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://github.com/rxrw/rxrw.me"
+    repoURL = "https://github.com/rxrw/rxrw.github.io"
     # 编辑地址
     repoEditURL = ""
 
