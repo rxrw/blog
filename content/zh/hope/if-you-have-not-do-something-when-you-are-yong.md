@@ -2,13 +2,11 @@
 title: "如果年轻的时候还没有拼尽全力的干些什么"
 date: 2018-02-23T16:39:16+08:00
 lastmod: 2018-02-23T16:39:16+08:00
-tags : ["希望", "感想"]
-slug : "If-You-Have-Not-Do-something-When-You-Are-Yong"
+tags: ["希望", "感想"]
+slug: "If-You-Have-Not-Do-something-When-You-Are-Yong"
 description: "If You Have Not Do something When You Are Yong"
 toc: false
 ---
-
-
 
 如果年轻的时候还没有拼尽全力的干些什么
 
@@ -62,8 +60,6 @@ toc: false
 
 从未
 
-
-
 也许有人会说
 
 我没有那么多的能力和想法
@@ -73,8 +69,6 @@ toc: false
 只要努力了
 
 就比混吃等死来得有意义
-
-
 
 现在在春节开往回家的高铁上
 
