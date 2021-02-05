@@ -2,9 +2,9 @@
 title: "Live To Death"
 date: 2015-12-20T23:38:14+08:00
 lastmod: 2015-12-20T23:38:14+08:00
-tags : ["启程", "空间"]
+tags: ["启程", "空间"]
 draft: false
-slug : "live-to-death"
+slug: "live-to-death"
 ---
 
 今天大概是大学以来没喝酒的情况下睡觉最早的一次了吧。。
