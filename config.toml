@@ -537,7 +537,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableServiceWorker = false
+    enableServiceWorker = true
 
 
     ######################################
@@ -563,7 +563,7 @@ uglyURLs = false
     ######################################
     # Mermaid (https://github.com/mermaid-js/mermaid)
 
-    enableMermaid = true
+    enableMermaid = false
     # Note: *global settings*
     #       `mermaid` in post’s Front Matter
     #       has a higher priority than here
@@ -646,7 +646,7 @@ uglyURLs = false
     googleAdClient = "ca-pub-3494628741098434"
 
     ## Auto Ads
-    enableGoogleAutoAds = true
+    enableGoogleAutoAds = false
 
     ## Ad Units
     enableGoogleAdUnits = false
