@@ -46,6 +46,22 @@ disablePathToLower = false
 relativeURLs = true
 uglyURLs = false
 
+# Algolia
+[algolia]
+    index = "rxrw"
+    key = "ac7858259bd08a5ccdab68634b8e8395"
+    appID = "1G1YFB2ART"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
 # URL structure
 [permalinks]
     categories = "/categories/:slug/"
@@ -144,7 +160,7 @@ uglyURLs = false
 # Hugo 的输出控制
 [outputs]
     page = ["HTML"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
     section = ["HTML"]
     taxonomy = ["HTML"]
     term = ["HTML"]
