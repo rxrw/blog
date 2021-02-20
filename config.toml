@@ -46,11 +46,6 @@ disablePathToLower = false
 relativeURLs = true
 uglyURLs = false
 
-# Algolia
-[algolia]
-    index = "rxrw"
-    key = "ac7858259bd08a5ccdab68634b8e8395"
-    appID = "1G1YFB2ART"
 
 [outputFormats.Algolia]
 baseName = "algolia"
@@ -1301,13 +1296,33 @@ params = ["categories", "tags"]
 
 
     ######################################
-    # Lunr 搜索（暂不支持中文）
+    # 启用搜索
 
     # 说明：需要开启 `SearchIndex` 的输出
 
-    enableLunrSearch = true
+    enableSearch = true
+
+    # 搜索引擎目前支持：lunr, algolia
+    searchEngine = "algolia"
+
+    ######################################
+    # 启用Lunr搜索（暂不支持中文）
+
+    # 说明：需要开启 `SearchIndex` 的输出
+    # 此选项用于兼容原有 lunr 搜索，优先级较高
+
+    enableLunrSearch = false
+
     # 说明：https://lunrjs.com/
 
+    ######################################
+    # Algolia
+
+    algoliaIndex = "rxrw"
+    algoliaKey = "cb17d0f6d1d71018132f6c59fcfd89fd"
+    algoliaAppID = "1G1YFB2ART"
+
+    # 说明：https://www.algolia.com/
 
     ######################################
     # 404 页面
@@ -1319,6 +1334,7 @@ params = ["categories", "tags"]
     fofVideoWebm = ""
     fofVideoMp4 = ""
     # 说明：视频地址可留空（""）
+
 
 
 # 中文
