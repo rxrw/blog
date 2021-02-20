@@ -548,7 +548,7 @@ params = ["categories", "tags"]
     # Note: render only in production
     #       environment
 
-    enableServiceWorker = true
+    enableServiceWorker = false
 
 
     ######################################
