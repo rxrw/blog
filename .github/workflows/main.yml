@@ -12,6 +12,15 @@ jobs:
       - uses: actions/checkout@v2  # v2 does not have submodules option now
         with:
           submodules: true
+          
+      - uses: rxrw/markdown-image-uploader-actions@v2
+        with:
+          path: 'content'
+          aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
+          aliyun_oss_accesskey_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
+          aliyun_oss_endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+          aliyun_oss_bucket: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
+          visit_url: ${{ secrets.VISIT_URL }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
