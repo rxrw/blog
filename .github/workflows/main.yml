@@ -15,7 +15,7 @@ jobs:
           
       - uses: rxrw/markdown-image-uploader-actions@v1
         with:
-          path: 'content'
+          content_path: 'content'
           aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
           aliyun_oss_accesskey_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
           aliyun_oss_endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
