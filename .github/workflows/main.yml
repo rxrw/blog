@@ -13,7 +13,8 @@ jobs:
         with:
           submodules: true
           
-      - uses: rxrw/markdown-image-uploader@v1.1.2
+      - name: Deal With Images
+        uses: rxrw/markdown-image-uploader@v1.1.2
         with:
           content_path: 'content'
           aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
@@ -42,8 +43,9 @@ jobs:
           commit_message: ${{ github.event.head_commit.message }}
           
       - name: Add Algolia Indexer
-        uses: darrenjennings/algolia-docsearch-action@v0.1.0
+        uses: rxrw/algolia-index-uploader@v1
         with:
-          algolia_application_id: ${{ secrets.ALGOLIA_APPID }}
-          algolia_api_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          file: './public/algolia.json'
+          algolia_index_id: ${{ secrets.ALGOLIA_APPID }}
+          algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          algolia_index_name: 'rxrw'
+          index_path: 'public/algolia.json'
