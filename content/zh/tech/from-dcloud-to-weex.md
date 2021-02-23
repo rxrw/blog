@@ -40,10 +40,10 @@ toc: true
 
 好啦，这次的第一选型就是 DCloud 了。毕竟在将 DCloud 与 APICloud 对比一下，还是前者比较能吹。又产业联盟又各种超级 IDE 的，而且说 APICloud 的技术也是从这儿拿的，是吧。
 以下是 DCloud 的官网首页公告。没见法院要求的 APICloud 往首页放，倒是原告一直在摆着。
-![](15333215646832.jpg)
+![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/a0b884e41477ff5483b66da85a72b8f8.jpg)
 
 因为以前也开发过，所以比较有经验。还是下载 HBuilder 开发。什么是 HBuilder 呢？
-![](15333216777307.jpg)
+![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/3a2bb7d4c3ce61fbff89010f820cd4cb.jpg)
 
 下载下来，居然跟以前几乎一样。还是 eclipse 的拓展包拼出来的。包含了真机调试，云端打包以及最基本的代码提示等功能。我不知道为什么他能把「护眼模式」说了这么多年，有什么稀奇么。。
 开发的路上，初始化项目。然后依旧是右边可以开一个预览，但只能看 html 的内容，有关动态页面还是要跑去 Chrome 里面去看了。然后提供了一个 ui 框架叫做 AUI ， 代码逻辑都是 jQuery 的语法。貌似看见过有人将 vue 工程转移到上面做 app。但我知道效果肯定很一般。关于各种登录分享地图等等插件都是集成好的，在工程设置里直接填 token/access_key 什么的就行了。但我毕竟也是接触过原生开发的，我不知道他要求填写微信的 AppSecret 是为什么。。
@@ -62,10 +62,10 @@ toc: true
 原因与上述大部分相同，还有几点：
 
 1. 商业化太严重，比如刚登录进来的弹框：
-   ![](15333232848088.jpg)
+   ![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/b7f359cf2b6f819f37769b5e52c4b32b.jpg)
 2. 据我回忆，这是唯一一个我注册了第二天还会给我打电话的。。
 3. 倒是有我想要的模块市场，可是。。
-   ![](15333233853020.jpg)
+   ![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/386032ff9cb06c2c604eafe12e3a24f0.jpg)
    你见过动不动就要收钱的，代码还要自己写的开发者网站么。。
 4. 自己有一套 ui 库叫 MUI，听起来是不是跟 AUI 很像。
    放弃
@@ -83,7 +83,7 @@ toc: true
 然后经过两周的研究+没有写多少业务代码，一直配置运行环境来着。算了。。放弃了。
 即使是阿里开源社区的产品，但是几乎没有人在弄的东西，也就是社区环境最怕的内容——没有支持者。最后，抛下对 React Native 的偏见，走向了人生的道路。
 给大家看一下许久没更新的 Weex 文档
-![](15333250316524.jpg)
+![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/2af766e5a47767c1983a0b03ee8c297a.jpg)
 
 #### React Native
 
@@ -96,6 +96,6 @@ toc: true
 3. 视图、网络及存储都接好了原生
 4. JSX 语法，用起来还是比较爽的
    更何况，在第一次接触 React 和 React Native 当天，就已经开始搞下 Tab 一样。
-![](15333254941780.jpg)
+![](https://rxrw.iuv520.com/zh/tech/from-dcloud-to-weex/06bff5739bf754acc63d55e37adeab8d.jpg)
 
 太困了，不说了，晚安

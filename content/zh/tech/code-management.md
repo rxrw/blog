@@ -14,10 +14,10 @@ toc: true
 配合 Gitlab 的镜像仓库功能，实现代码统一集中管理，由 Gitlab 去负责将代码推到该在的地方，完美。
 
 阿里云 Flow :
-![阿里云 flow](https://i.loli.net/2021/01/22/s5v7RCTpzf23MnV.png)
+![阿里云 flow](https://rxrw.iuv520.com/zh/tech/code-management/97d36209f1b5ab15966a56134a1f41aa.png)
 
 最终效果：
-![代码的传递](https://i.loli.net/2021/01/22/DM7PiQ59vz1yUNW.png)
+![代码的传递](https://rxrw.iuv520.com/zh/tech/code-management/dbca5ee9c63c0a49d504aa65352a78d0.png)
 
 就是从以前要管理很多很多远程库变成只需要管一个就好了。同时，对代码的存储也是一个不错的选择。
 
