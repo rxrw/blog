@@ -32,9 +32,9 @@ jobs:
           publish_branch: built  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
           
-      - name: Add Algolia Indexer
-        uses: darrenjennings/algolia-docsearch-action@v0.1.0
-        with:
-          algolia_application_id: ${{ secrets.ALGOLIA_APPID }}
-          algolia_api_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          file: 'algolia.json'
+#       - name: Add Algolia Indexer
+#         uses: darrenjennings/algolia-docsearch-action@v0.1.0
+#         with:
+#           algolia_application_id: ${{ secrets.ALGOLIA_APPID }}
+#           algolia_api_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+#           file: 'algolia.json'
