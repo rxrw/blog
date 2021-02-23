@@ -7,7 +7,7 @@ description: ""
 toc: true
 ---
 
-![昨天拍的。跨年赶了个十五](https://i.loli.net/2020/12/31/hkM2aVRjL5IfsAS.jpg)
+![昨天拍的。跨年赶了个十五](https://rxrw.iuv520.com/zh/essay/good-bye-2020/d34b996fa84ad18fa2079f378697eca3.jpg)
 
 突然想起来好像每次过年的时候， Apple Watch 都会弹一个礼花的图案，所以今晚先不摘了。
 
@@ -53,15 +53,15 @@ toc: true
 
 工作呢，还挺让人开心的。大家聊得都挺来，一起吃个饭下个班。顺便看一看我们的小礼物。
 
-![2021的装饰](https://i.loli.net/2020/12/31/29W3kpHlPGbr16E.jpg)
+![2021的装饰](https://rxrw.iuv520.com/zh/essay/good-bye-2020/fd2a0b9034662c61d968dab21cc92b5a.jpg)
 
-![圣诞夜的果子](https://i.loli.net/2020/12/31/ob7XDcGSQZrjn4w.jpg)
+![圣诞夜的果子](https://rxrw.iuv520.com/zh/essay/good-bye-2020/edc54bcf9c952bbb324d8ef284ca1a13.jpg)
 
 今天的草莓忘拍了..
 
 11 月玩儿了个《赛博朋克 2077》这款 RPG 游戏。讲的是未来世界里面的人和事，不过是个悲观世界。里面说的“义体”，“超梦”还都挺科技感的。对这种游戏提不起兴趣，不玩儿的时候就不想了。（不过我玩儿的时候我的好朋友“杰克”死了，让我挺难过的，我以为他会陪我走整个主线）
 
-![赛博朋克截图](https://i.loli.net/2020/12/31/jFI3JPcv6wu57Uq.jpg)
+![赛博朋克截图](https://rxrw.iuv520.com/zh/essay/good-bye-2020/7e3f1177793199b100a47372040b642c.jpg)
 
 争取每天都是 00:30 之前睡觉，自从有一次 23:00 睡觉的时候，失眠了.. 翻来覆去 1 点多才睡着。觉得有好多事情想不通，想不透，又控制不了呀。之后失眠大概越来越严重了。最讨厌的是.. 有一天，晚上听歌睡着了，被许嵩的 _《降温》_ 开头的锣声啪的一下给吵醒了，原来还挺爱听的歌，再也不想听了。
 
@@ -257,12 +257,12 @@ _他_：我肯定不会一个人吃火锅，多没意思啊。（多孤单啊）
 
 动森，我在朋友圈喊，没人理我。贴吧里建了个群，从 8 月份鼎盛的 50+人到现在的 30 人，不过还好，他们都还在。7 月、8 月在家的时候，每天大家互相串门儿，送礼物，到后来大家开学了，群也就慢慢静了下来。璐璐，小仙男，茄子，肚皮，小白，“老师”，草莓等等.. 说好圣诞一起玩儿，不过也没安排上，毕竟.. 还有现实生活嘛。
 
-![动森的中秋](https://i.loli.net/2020/12/31/QtLHYrP91pWiqgx.jpg)
+![动森的中秋](https://rxrw.iuv520.com/zh/essay/good-bye-2020/e2b4da9be611ec537d3d628585ad3c4e.jpg)
 
 用游戏逃避现实这事儿今年一直在干，无论是打了 LOL 的 8 月，还是动森的 7 月。
 
-![小润](https://i.loli.net/2020/12/31/J3gS2jqo9OWam65.jpg)
-![一次五杀](https://i.loli.net/2020/12/31/YqH4IB1Niz7AOgZ.jpg)
+![小润](https://rxrw.iuv520.com/zh/essay/good-bye-2020/895af4e27acf28701ff2e9e20609780c.jpg)
+![一次五杀](https://rxrw.iuv520.com/zh/essay/good-bye-2020/2864b655a31e032c9a136de5aea271ba.jpg)
 
 当我不想逃避的时候，发现一切都离我远去了。
 

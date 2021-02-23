@@ -22,7 +22,7 @@ toc: true
   - ipad 一部，iphone 不可以哦
   - 没了
     这是一款面向于零基础编程学习软件。但是！内容由浅入深，在玩游戏的过程中学会了编程，岂不是美哉？而且这个软件自带编程功能，你也可以在空白的项目中自己创建项目自己写着玩，甚至可以创建 xcode 项目哦！
-- 截图：![随便找了一个游戏](Image%202019-6-9%2022-10.png)![成功了](Image%202019-6-9%2022-10-1.png)
+- 截图：![随便找了一个游戏](https://rxrw.iuv520.com/zh/tech/if-you-want-to-learn-coding-2/image2.png)![成功了](https://rxrw.iuv520.com/zh/tech/if-you-want-to-learn-coding-2/image1.png)
 
 ### Human Being Resouce
 
@@ -31,13 +31,13 @@ toc: true
   - 30 RMB
   - 没了
     这是一款 0 代码，偏向算法的游戏。怎么玩呢，你要控制小人按照你的指令执行需求。前面很简单呐，到后来，就会要求你的代码精简并且执行速度快，一步一步完成任务吧！
-- 截图：![](Image%202019-6-9%2022-14.png) 通过拖拽就可完成任务哦。
+- 截图：![](https://rxrw.iuv520.com/zh/tech/if-you-want-to-learn-coding-2/image3.png) 通过拖拽就可完成任务哦。
 
 ### 7 bliion humans
 
 同样地，30RMB
 跟上述的软件差不多，但这个会一起控制很多个小人儿，一家公司出的
 
-- 截图：![](Image%202019-6-9%2022-17.png)
+- 截图：![](https://rxrw.iuv520.com/zh/tech/if-you-want-to-learn-coding-2/image4.png)
 
 加油吧！

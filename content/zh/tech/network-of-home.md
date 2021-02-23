@@ -23,7 +23,7 @@ toc: true
 
 ### 硬件部分
 
-![网络结构图](https://source.acexy.cn/view/XcAcFZk)
+![网络结构图](https://rxrw.iuv520.com/zh/tech/network-of-home/93ebdb7b86679b29a8d391812b31ec7d.jpg)
 
 其中实线使用网线连接，虚线是无线。
 里面有几个比较特殊，就是 PC 和树莓派和群晖，乍一看像一个环形结构，其实是有特殊原因的。先说这种布局的理由：
