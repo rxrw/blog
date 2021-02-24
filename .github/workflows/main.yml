@@ -22,36 +22,36 @@ jobs:
           name: sources
           path: .
             
-  convert-images:
+#   convert-images:
   
-    runs-on: ubuntu-20.04
-    needs: checkout
-    steps:
+#     runs-on: ubuntu-20.04
+#     needs: checkout
+#     steps:
 
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: sources
-      - name: Deal With Images
-        uses: rxrw/markdown-image-uploader@v1.1.2
-        with:
-          content_path: 'content'
-          aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
-          aliyun_oss_accesskey_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
-          aliyun_oss_endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
-          aliyun_oss_bucket: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
-          visit_url: ${{ secrets.VISIT_URL }}
+#       - name: Download Artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: sources
+#       - name: Deal With Images
+#         uses: rxrw/markdown-image-uploader@v1.1.2
+#         with:
+#           content_path: 'content'
+#           aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
+#           aliyun_oss_accesskey_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
+#           aliyun_oss_endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+#           aliyun_oss_bucket: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
+#           visit_url: ${{ secrets.VISIT_URL }}
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: sources
-          path: .
+#       - name: Upload Artifacts
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: sources
+#           path: .
 
   build:
   
     runs-on: ubuntu-20.04
-    needs: convert-images
+    needs: checkout
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
@@ -75,44 +75,59 @@ jobs:
             public
             
   
-  add-index:
+#   add-index:
   
-    runs-on: ubuntu-20.04
-    needs: build
-    steps:
+#     runs-on: ubuntu-20.04
+#     needs: build
+#     steps:
     
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: public
+#       - name: Download Artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: public
 
-      - name: Add Algolia Indexer
-        uses: rxrw/algolia-index-uploader@v1
-        with:
-          algolia_index_id: ${{ secrets.ALGOLIA_APPID }}
-          algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          algolia_index_name: 'rxrw'
-          index_path: 'algolia.json'
+#       - name: Add Algolia Indexer
+#         uses: rxrw/algolia-index-uploader@v1
+#         with:
+#           algolia_index_id: ${{ secrets.ALGOLIA_APPID }}
+#           algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+#           algolia_index_name: 'rxrw'
+#           index_path: 'algolia.json'
   
-  deploy-github-pages:
+#   deploy-github-pages:
   
-    runs-on: ubuntu-20.04
+#     runs-on: ubuntu-20.04
+#     needs: build
+#     steps:
+    
+#       - name: Download Artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: public
+          
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#           external_repository: rxrw/rxrw.github.io
+#           publish_dir: "."
+#           keep_files: false # remove existing files
+#           publish_branch: built  # deploying branch
+#           commit_message: ${{ github.event.head_commit.message }}
+
+  deploy-aliyun-swas:
+    
+    runs-on: rxrw
     needs: build
     steps:
-    
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
           name: public
           
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: rxrw/rxrw.github.io
-          publish_dir: "."
-          keep_files: false # remove existing files
-          publish_branch: built  # deploying branch
-          commit_message: ${{ github.event.head_commit.message }}
-
-          
+        shell: bash
+        run: |
+          cd $GITHUB_WORKSPACE
+          cp -r * /var/www/html
+        
