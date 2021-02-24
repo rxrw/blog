@@ -24,7 +24,7 @@ jobs:
             
   convert-images:
   
-    runs-on: ubuntu-20.04
+    runs-on: rxrw
     needs: checkout
     steps:
 
@@ -32,14 +32,16 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: sources
+
       - name: Deal With Images
-        uses: rxrw/markdown-image-uploader@v1.1.2
+        uses: rxrw/markdown-image-uploader@v2.0.1
         with:
           content_path: 'content'
-          aliyun_oss_accesskey_id: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
-          aliyun_oss_accesskey_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
-          aliyun_oss_endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
-          aliyun_oss_bucket: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
+          client_name: 'aliyun'
+          access_key: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
+          access_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
+          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT_INTERNAL }}
+          bucket_name: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
           visit_url: ${{ secrets.VISIT_URL }}
 
       - name: Upload Artifacts
