@@ -56,7 +56,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: resources
+          name: sources
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
@@ -93,13 +93,6 @@ jobs:
           algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           algolia_index_name: 'rxrw'
           index_path: 'public/algolia.json'
-      
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: resources
-          path: |
-            !*.json
   
   deploy-github-pages:
   
