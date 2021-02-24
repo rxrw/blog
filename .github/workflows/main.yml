@@ -24,7 +24,7 @@ jobs:
             
   convert-images:
   
-    runs-on: rxrw
+    runs-on: ubuntu-20.04
     needs: checkout
     steps:
 
@@ -40,7 +40,7 @@ jobs:
           client_name: 'aliyun'
           access_key: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
           access_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
-          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT_INTERNAL }}
+          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
           bucket_name: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
           visit_url: ${{ secrets.VISIT_URL }}
 
