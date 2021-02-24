@@ -25,7 +25,7 @@ jobs:
   covert-images:
   
     runs-on: ubuntu-20.04
-    
+    needs: checkout
     steps:
       - name: Deal With Images
         uses: rxrw/markdown-image-uploader@v1.1.2
@@ -46,7 +46,7 @@ jobs:
   build:
   
     runs-on: ubuntu:20.04
-    
+    needs: covert-images
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
@@ -73,7 +73,7 @@ jobs:
   add-index:
   
     runs-on: ubuntu:20.04
-    
+    needs: build
     steps:
     
       - name: Download Artifacts
@@ -99,7 +99,7 @@ jobs:
   deploy-github-pages:
   
     runs-on: ubuntu:20.04
-    
+    needs: build
     steps:
     
       - name: Download Artifacts
