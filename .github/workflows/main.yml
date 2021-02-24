@@ -6,13 +6,27 @@ on:
       - master
 
 jobs:
-  build-deploy:
+  checkout:
+  
     runs-on: ubuntu-20.04
+    
     steps:
-      - uses: actions/checkout@v2  # v2 does not have submodules option now
+      - name: Checkout From Github
+        uses: actions/checkout@v2
         with:
           submodules: true
-          
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: resources
+          path: .
+            
+  covert-images:
+  
+    runs-on: ubuntu-20.04
+    
+    steps:
       - name: Deal With Images
         uses: rxrw/markdown-image-uploader@v1.1.2
         with:
@@ -23,6 +37,22 @@ jobs:
           aliyun_oss_bucket: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
           visit_url: ${{ secrets.VISIT_URL }}
 
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: resources
+          path: .
+
+  build:
+  
+    runs-on: ubuntu:20.04
+    
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: resources
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
         with:
@@ -31,17 +61,26 @@ jobs:
 
       - name: Build
         run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
-          external_repository: rxrw/rxrw.github.io # Pages 远程仓库 
-          publish_dir: "./public"
-          keep_files: true # remove existing files
-          publish_branch: built  # deploying branch
-          commit_message: ${{ github.event.head_commit.message }}
-          
+          name: resources
+          path: |
+            public
+            
+  
+  add-index:
+  
+    runs-on: ubuntu:20.04
+    
+    steps:
+    
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: resources
+
       - name: Add Algolia Indexer
         uses: rxrw/algolia-index-uploader@v1
         with:
@@ -49,3 +88,33 @@ jobs:
           algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           algolia_index_name: 'rxrw'
           index_path: 'public/algolia.json'
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: resources
+          path: |
+            !*.json
+  
+  deploy-github-pages:
+  
+    runs-on: ubuntu:20.04
+    
+    steps:
+    
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: resources
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: rxrw/rxrw.github.io
+          publish_dir: "."
+          keep_files: true # remove existing files
+          publish_branch: built  # deploying branch
+          commit_message: ${{ github.event.head_commit.message }}
+
+          
