@@ -19,10 +19,10 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: resources
+          name: sources
           path: .
             
-  covert-images:
+  convert-images:
   
     runs-on: ubuntu-20.04
     needs: checkout
@@ -31,7 +31,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: resources
+          name: sources
       - name: Deal With Images
         uses: rxrw/markdown-image-uploader@v1.1.2
         with:
@@ -45,13 +45,13 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: resources
+          name: sources
           path: .
 
   build:
   
     runs-on: ubuntu-20.04
-    needs: covert-images
+    needs: convert-images
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
@@ -70,7 +70,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: resources
+          name: public
           path: |
             public
             
@@ -84,7 +84,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: resources
+          name: public
 
       - name: Add Algolia Indexer
         uses: rxrw/algolia-index-uploader@v1
@@ -110,7 +110,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: resources
+          name: public
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -118,7 +118,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: rxrw/rxrw.github.io
           publish_dir: "."
-          keep_files: true # remove existing files
+          keep_files: false # remove existing files
           publish_branch: built  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
 
