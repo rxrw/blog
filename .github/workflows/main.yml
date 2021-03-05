@@ -1,4 +1,4 @@
-name: Deploy Hugo Site to Github Pages on Master Branch
+name: Deploy to Github Pages，Aliyun SWAS and Vercel
 
 on:
   push:
@@ -6,12 +6,59 @@ on:
       - master
 
 jobs:
-  build-deploy:
+  checkout:
+  
     runs-on: ubuntu-20.04
+    
     steps:
-      - uses: actions/checkout@v2  # v2 does not have submodules option now
+      - name: Checkout From Github
+        uses: actions/checkout@v2
         with:
           submodules: true
+      
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: sources
+          path: .
+            
+  convert-images:
+  
+    runs-on: ubuntu-20.04
+    needs: checkout
+    steps:
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: sources
+
+      - name: Deal With Images
+        uses: rxrw/markdown-image-uploader@v2.0.1
+        with:
+          content_path: 'content'
+          client_name: 'aliyun'
+          access_key: ${{ secrets.ALIYUN_OSS_ACCESSKEY_ID }}
+          access_secret: ${{ secrets.ALIYUN_OSS_ACCESSKEY_SECRET }}
+          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+          bucket_name: ${{ secrets.ALIYUN_OSS_BUCKET_NAME }}
+          visit_url: ${{ secrets.VISIT_URL }}
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: sources
+          path: .
+
+  build:
+  
+    runs-on: ubuntu-20.04
+    needs: convert-images
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: sources
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
@@ -21,20 +68,68 @@ jobs:
 
       - name: Build
         run: hugo --minify
+        
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: public
+          path: |
+            public
+            
+  
+  add-index:
+  
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+    
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: public
 
+      - name: Add Algolia Indexer
+        uses: rxrw/algolia-index-uploader@v1
+        with:
+          algolia_index_id: ${{ secrets.ALGOLIA_APPID }}
+          algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          algolia_index_name: 'rxrw'
+          index_path: 'algolia.json'
+  
+  deploy-github-pages:
+  
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+    
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
-          external_repository: rxrw/rxrw.github.io # Pages 远程仓库 
-          publish_dir: "./public"
-          keep_files: true # remove existing files
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: rxrw/rxrw.github.io
+          publish_dir: "."
+          keep_files: false # remove existing files
           publish_branch: built  # deploying branch
           commit_message: ${{ github.event.head_commit.message }}
-          
-      - name: Add Algolia Indexer
-        uses: darrenjennings/algolia-docsearch-action@v0.1.0
+
+  deploy-aliyun-swas:
+    
+    runs-on: rxrw
+    needs: build
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
         with:
-          algolia_application_id: ${{ secrets.ALGOLIA_APPID }}
-          algolia_api_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          file: 'algolia.json'
+          name: public
+          
+      - name: Deploy
+        shell: bash
+        run: |
+          cd $GITHUB_WORKSPACE
+          cp -r * /var/www/html
+        
