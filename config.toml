@@ -46,13 +46,6 @@ disablePathToLower = false
 relativeURLs = true
 uglyURLs = false
 
-
-[outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
-
 [params.algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 params = ["categories", "tags"]
@@ -151,6 +144,12 @@ params = ["categories", "tags"]
 [outputFormats.SearchIndex]
     mediaType = "application/json"
     baseName = "search"
+# algolia 的搜索索引
+[outputFormats.Algolia]
+    baseName = "algolia"
+    isPlainText = true
+    mediaType = "application/json"
+    notAlternative = true
 
 # Hugo 的输出控制
 [outputs]
