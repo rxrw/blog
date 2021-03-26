@@ -7,23 +7,23 @@ on:
 
 jobs:
   checkout:
-  
+
     runs-on: ubuntu-20.04
-    
+
     steps:
       - name: Checkout From Github
         uses: actions/checkout@v2
         with:
           submodules: true
-      
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: sources
           path: .
-            
+
   convert-images:
-  
+
     runs-on: ubuntu-20.04
     needs: checkout
     steps:
@@ -51,7 +51,7 @@ jobs:
           path: .
 
   build:
-  
+
     runs-on: ubuntu-20.04
     needs: convert-images
     steps:
@@ -63,26 +63,26 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
         with:
-          hugo-version: '0.80.0'
+          hugo-version: '0.82.0'
           extended: true
 
       - name: Build
         run: hugo --minify
-        
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: public
           path: |
             public
-            
-  
+
+
   add-index:
-  
+
     runs-on: ubuntu-20.04
     needs: build
     steps:
-    
+
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
@@ -95,18 +95,18 @@ jobs:
           algolia_index_admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           algolia_index_name: 'rxrw'
           index_path: 'algolia.json'
-  
+
   deploy-github-pages:
-  
+
     runs-on: ubuntu-20.04
     needs: build
     steps:
-    
+
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
           name: public
-          
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -118,7 +118,7 @@ jobs:
           commit_message: ${{ github.event.head_commit.message }}
 
   deploy-aliyun-swas:
-    
+
     runs-on: rxrw
     needs: build
     steps:
@@ -126,10 +126,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: public
-          
+
       - name: Deploy
         shell: bash
         run: |
           cd $GITHUB_WORKSPACE
           cp -r * /var/www/html
-        
