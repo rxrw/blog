@@ -1,6 +1,7 @@
 ---
 title: "无聊早安生成器"
 date: 2021-01-08T22:25:08+08:00
+lastmod: 2021-01-08T22:25:08+08:00
 tags: ["技术", "开源", "golang"]
 slug: "Daily-Reminder"
 description: "Daily Reminder"

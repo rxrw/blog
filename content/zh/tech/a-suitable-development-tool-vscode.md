@@ -1,6 +1,7 @@
 ---
 title: "vscode —— 选择一款合适的开发工具"
 date: 2021-02-05T17:50:48+08:00
+lastmod: 2021-02-05T17:50:48+08:00
 tags: ["vscode", "技术"]
 slug: "A-Suitable-Development-Tool-Vscode"
 description: "A Suitable Development Tool Vscode"

@@ -1,6 +1,7 @@
 ---
 title: "ulysses 和 vscode ?"
 date: 2021-01-13T15:52:58+08:00
+lastmod: 2021-01-13T15:52:58+08:00
 tags : ["纠结", "随笔"]
 slug : "Choose-Between-Ulysses-and-Vscode"
 description: "Choose Between Ulysses and Vscode"

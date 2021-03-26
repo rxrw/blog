@@ -406,7 +406,7 @@ params = ["categories", "tags"]
     # 列表页面
 
     # 宽度
-    listWidth = 36
+    listWidth = 54
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -678,7 +678,7 @@ params = ["categories", "tags"]
     #            supported
 
     # The content width of the post
-    postWidth = ""
+    postWidth = "54"
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -1004,10 +1004,10 @@ params = ["categories", "tags"]
     # 文章更新徽章
 
     # 是否开启
-    enablePostUpdatedBadge = false
+    enablePostUpdatedBadge = true
 
     # 是否显示（全局设置）
-    displayUpdatedBadge = false
+    displayUpdatedBadge = true
     # 说明：文章的 Front Matter 中的 `badge`
     #      的优先级高于此处
 
@@ -1024,7 +1024,7 @@ params = ["categories", "tags"]
     enablePostGitInfo = true
 
     # 是否显示（全局设置）
-    displayPostGitInfo = false
+    displayPostGitInfo = true
     # 说明：文章的 Front Matter 中的 `gitinfo`
     #      的优先级高于此处
 
@@ -1048,7 +1048,7 @@ params = ["categories", "tags"]
     # 反馈链接的图标
     feedbackIcon = "question"
     # 反馈链接的文本
-    feedbackText = "Feedback"
+    feedbackText = "想说点啥"
 
     # 是否显示编辑链接
     displayEditLink = false
@@ -1074,7 +1074,7 @@ params = ["categories", "tags"]
     shareOnTwitter = true
     shareOnFacebook = true
     shareOnLinkedIn = false
-    shareOnTelegram = false
+    shareOnTelegram = true
     shareOnWeibo = true
     shareOnDouban = false
     shareOnQQ = true
@@ -1155,7 +1155,7 @@ params = ["categories", "tags"]
     displayBackToTopInHome = true
 
     # 是否在移动端显示
-    displayBackToTopOnMobile = false
+    displayBackToTopOnMobile = true
 
     # 按钮图标
     backToTopIcon = "arrow-up"
@@ -1174,7 +1174,7 @@ params = ["categories", "tags"]
     displayFooterInHome = true
 
     # 是否显示版权符号（©）
-    displayCopyrightSymbol = false
+    displayCopyrightSymbol = true
 
     # 是否显示站点的创建年份
     displaySiteCreatedYear = true
