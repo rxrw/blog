@@ -1,6 +1,7 @@
 ---
 title: "代码的管理"
 date: 2021-01-22T15:05:05+08:00
+lastmod: 2021-01-22T15:05:05+08:00
 tags: ["随笔", "技术", "Gitlab", "Github", "阿里云", "部署"]
 slug: "Code-Management"
 description: "Code Management"

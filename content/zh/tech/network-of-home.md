@@ -1,6 +1,7 @@
 ---
 title: "家庭网络布局改造"
 date: 2021-01-14T18:58:20+08:00
+lastmod: 2021-01-14T18:58:20+08:00
 tags: ["技术", "教程", "开源"]
 slug: "Network-of-Home"
 description: "Network of Home"
