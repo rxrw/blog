@@ -1,7 +1,7 @@
 stages:
   - convert-images
   - build-hugo
-  - add-index
+  # - add-index
   - deploy-swas
 
 convert-images:
