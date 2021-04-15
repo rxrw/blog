@@ -7,8 +7,6 @@ stages:
 convert-images:
   stage: convert-images
   tags:
-    - opti
-    - build
     - docker
   image: reprover/markdown-image-uploader
   script:
@@ -20,8 +18,6 @@ convert-images:
 build-first:
   stage: build-hugo
   tags:
-    - opti
-    - build
     - docker
   image: xdevbase/hugo-builder:latest
   script:
@@ -33,8 +29,6 @@ build-first:
 add-index:
   stage: add-index
   tags:
-    - opti
-    - build
     - docker
   image: python:latest
   before_script:
@@ -46,8 +40,6 @@ add-index:
 deploy-swas:
   stage: deploy-swas
   tags:
-    - opti
-    - build
     - docker
   image: alpine
   before_script:
