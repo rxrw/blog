@@ -22,7 +22,7 @@ build-first:
   tags:
     - docker
   variables:
-    GIT_SUBMODULE_STRATEGY: recursive
+    - GIT_SUBMODULE_STRATEGY: recursive
   image: xdevbase/hugo-builder:latest
   script:
     - hugo --minify
