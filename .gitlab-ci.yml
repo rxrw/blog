@@ -10,7 +10,7 @@ convert-images:
     - docker
   image: reprover/markdown-image-uploader
   script:
-    - uploader "${CI_PROJECT_DIR}/content"
+    - ALIYUN_OSS_ACCESSKEY_ID=$ALIYUN_OSS_ACCESSKEY_ID ALIYUN_OSS_ACCESSKEY_SECRET=$ALIYUN_OSS_ACCESSKEY_SECRET ALIYUN_OSS_ENDPOINT=$ALIYUN_OSS_ENDPOINT BUCKET_NAME=$BUCKET_NAME CLIENT_NAME=$CLIENT_NAME VISIT_URL=$VISIT_URL uploader "${CI_PROJECT_DIR}/content"
   artifacts:
     paths:
       - content
