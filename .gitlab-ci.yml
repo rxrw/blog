@@ -10,7 +10,7 @@ convert-images:
     - docker
   image: reprover/markdown-image-uploader
   variables:
-    - ACCESS_SECRET=$ALIYUN_OSS_ACCESSKEY_ID
+    ACCESS_SECRET:$ALIYUN_OSS_ACCESSKEY_ID
   script:
     - ACCESS_SECRET=$ALIYUN_OSS_ACCESSKEY_SECRET ENDPOINT=$ALIYUN_OSS_ENDPOINT BUCKET_NAME=$BUCKET_NAME CLIENT_NAME=$CLIENT_NAME VISIT_URL=$VISIT_URL uploader "${CI_PROJECT_DIR}/content"
   artifacts:
@@ -22,7 +22,7 @@ build-first:
   tags:
     - docker
   variables:
-    - GIT_SUBMODULE_STRATEGY: recursive
+    GIT_SUBMODULE_STRATEGY: recursive
   image: xdevbase/hugo-builder:latest
   script:
     - hugo --minify
