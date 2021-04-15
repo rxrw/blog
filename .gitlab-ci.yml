@@ -35,22 +35,22 @@ build-first:
     paths:
       - public
 
-add-index:
-  stage: add-index
-  tags:
-    - docker
-  image: python:latest
-  variables:
-    ALGOLIA_INDEX_ID: $ALGOLIA_INDEX_ID
-    ALGOLIA_INDEX_ADMIN_KEY: $ALGOLIA_INDEX_ADMIN_KEY
-    ALGOLIA_INDEX_NAME: $ALGOLIA_INDEX_NAME
-    INDEX_PATH: $INDEX_PATH
-    GITHUB_WORKSPACE: $CI_PROJECT_DIR
-  before_script:
-    - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
-    - pip install algoliasearch
-  script:
-    - python3 main.py $INDEX_PATH
+# add-index:
+#   stage: add-index
+#   tags:
+#     - docker
+#   image: python:latest
+#   variables:
+#     ALGOLIA_INDEX_ID: $ALGOLIA_INDEX_ID
+#     ALGOLIA_INDEX_ADMIN_KEY: $ALGOLIA_INDEX_ADMIN_KEY
+#     ALGOLIA_INDEX_NAME: $ALGOLIA_INDEX_NAME
+#     INDEX_PATH: $INDEX_PATH
+#     GITHUB_WORKSPACE: $CI_PROJECT_DIR
+#   before_script:
+#     - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
+#     - pip install algoliasearch
+#   script:
+#     - python3 main.py $INDEX_PATH
 
 deploy-swas:
   stage: deploy-swas
