@@ -4,7 +4,7 @@ stages:
   - add-index
   - deploy-swas
 
-convert-images:
+转换图片:
   stage: convert-images
   tags:
     - docker
@@ -22,7 +22,7 @@ convert-images:
     paths:
       - content
 
-build-first:
+编译Hugo:
   stage: build-hugo
   tags:
     - docker
@@ -35,7 +35,7 @@ build-first:
     paths:
       - public
 
-add-index:
+上传algolia索引:
   stage: add-index
   tags:
     - docker
@@ -52,7 +52,7 @@ add-index:
   script:
     - python3 main.py $INDEX_PATH
 
-deploy-swas:
+部署到阿里轻量云服务器:
   stage: deploy-swas
   tags:
     - docker
