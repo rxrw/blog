@@ -1,6 +1,6 @@
 stages:
-  - build-hugo
   - convert-images
+  - build-hugo
   - add-index
   - deploy-swas
 
@@ -8,7 +8,7 @@ convert-images:
   stage: convert-images
   tags:
     - opti
-    - docker
+    - build
   image: reprover/markdown-image-uploader
   script:
     - uploader "${CI_PROJECT_DIR}/content"
@@ -20,7 +20,7 @@ build-first:
   stage: build-hugo
   tags:
     - opti
-    - docker
+    - build
   image: xdevbase/hugo-builder:latest
   script:
     - hugo -d
@@ -32,7 +32,7 @@ add-index:
   stage: add-index
   tags:
     - opti
-    - docker
+    - build
   image: python:latest
   before_script:
     - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
@@ -44,7 +44,7 @@ deploy-swas:
   stage: deploy-swas
   tags:
     - opti
-    - docker
+    - build
   image: alpine
   before_script:
     - apk update && apk add --no-cache openssh-client
