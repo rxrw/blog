@@ -1004,10 +1004,10 @@ params = ["categories", "tags"]
     # 文章更新徽章
 
     # 是否开启
-    enablePostUpdatedBadge = true
+    enablePostUpdatedBadge = false
 
     # 是否显示（全局设置）
-    displayUpdatedBadge = true
+    displayUpdatedBadge = false
     # 说明：文章的 Front Matter 中的 `badge`
     #      的优先级高于此处
 
@@ -1029,7 +1029,7 @@ params = ["categories", "tags"]
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://github.com/rxrw/rxrw.github.io"
+    repoURL = "https://git.opti.io/blog/hugo"
     # 编辑地址
     repoEditURL = ""
 
