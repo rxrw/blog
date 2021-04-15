@@ -1,0 +1,59 @@
+stages:
+  - build-hugo
+  - convert-images
+  - add-index
+  - deploy-swas
+
+convert-images:
+  stage: convert-images
+  tags:
+    - opti
+    - docker
+  image: reprover/markdown-image-uploader
+  script:
+    - uploader "${CI_PROJECT_DIR}/content"
+  artifacts:
+    paths:
+      - content
+
+build-first:
+  stage: build-hugo
+  tags:
+    - opti
+    - docker
+  image: xdevbase/hugo-builder:latest
+  script:
+    - hugo -d
+  artifacts:
+    paths:
+      - public
+
+add-index:
+  stage: add-index
+  tags:
+    - opti
+    - docker
+  image: python:latest
+  before_script:
+    - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
+    - pip install algoliasearch
+  script:
+    - python3 main.py $INDEX_PATH
+
+deploy-swas:
+  stage: deploy-swas
+  tags:
+    - opti
+    - docker
+  image: alpine
+  before_script:
+    - apk update && apk add --no-cache openssh-client
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
+    - echo "${SSH_HOST_KEY}" > /etc/ssh/ssh_known_hosts
+  script:
+    - ssh-add ~/.ssh/id_rsa
+    - scp -r public/* $SSH_USER@$SSH_HOST:/var/www/html
