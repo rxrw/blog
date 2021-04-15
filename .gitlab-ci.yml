@@ -9,6 +9,7 @@ convert-images:
   tags:
     - opti
     - build
+    - docker
   image: reprover/markdown-image-uploader
   script:
     - uploader "${CI_PROJECT_DIR}/content"
@@ -21,6 +22,7 @@ build-first:
   tags:
     - opti
     - build
+    - docker
   image: xdevbase/hugo-builder:latest
   script:
     - hugo -d
@@ -33,6 +35,7 @@ add-index:
   tags:
     - opti
     - build
+    - docker
   image: python:latest
   before_script:
     - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
@@ -45,6 +48,7 @@ deploy-swas:
   tags:
     - opti
     - build
+    - docker
   image: alpine
   before_script:
     - apk update && apk add --no-cache openssh-client
