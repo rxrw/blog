@@ -11,8 +11,13 @@ convert-images:
   image: reprover/markdown-image-uploader
   variables:
     ACCESS_KEY: $ALIYUN_OSS_ACCESSKEY_ID
+    ACCESS_SECRET: $ALIYUN_OSS_ACCESSKEY_SECRET
+    ENDPOINT: $ALIYUN_OSS_ENDPOINT
+    BUCKET_NAME: $BUCKET_NAME
+    CLIENT_NAME: $CLIENT_NAME
+    VISIT_URL: $VISIT_URL
   script:
-    - ACCESS_SECRET=$ALIYUN_OSS_ACCESSKEY_SECRET ENDPOINT=$ALIYUN_OSS_ENDPOINT BUCKET_NAME=$BUCKET_NAME CLIENT_NAME=$CLIENT_NAME VISIT_URL=$VISIT_URL uploader "${CI_PROJECT_DIR}/content"
+    - uploader "${CI_PROJECT_DIR}/content"
   artifacts:
     paths:
       - content
@@ -35,6 +40,12 @@ add-index:
   tags:
     - docker
   image: python:latest
+  variables:
+    ALGOLIA_INDEX_ID: $ALGOLIA_INDEX_ID
+    ALGOLIA_INDEX_ADMIN_KEY: $ALGOLIA_INDEX_ADMIN_KEY
+    ALGOLIA_INDEX_NAME: $ALGOLIA_INDEX_NAME
+    INDEX_PATH: $INDEX_PATH
+    GITHUB_WORKSPACE: $CI_PROJECT_DIR
   before_script:
     - wget https://raw.githubusercontent.com/rxrw/algolia-index-uploader/main/main.py
     - pip install algoliasearch
