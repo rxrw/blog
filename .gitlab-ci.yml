@@ -21,7 +21,7 @@ build-first:
     - docker
   image: xdevbase/hugo-builder:latest
   script:
-    - hugo -d
+    - hugo --minify
   artifacts:
     paths:
       - public
