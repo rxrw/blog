@@ -68,3 +68,6 @@ stages:
   script:
     - ssh-add ~/.ssh/id_rsa
     - scp -r public/* $SSH_USER@$SSH_HOST:/var/www/html
+  environment:
+    name: production
+    url: https://rxrw.me
