@@ -30,10 +30,14 @@ badge = false
 
 不同于 `wordpress` ，包括 `hugo`在内的都是无偿提供的开源项目。
 
-本博客使用 [hugo](https://gohugo.io) 驱动，搭建在 ~~[vercel](https://vercel.com)~~ [`Github Pages`](https://pages.github.com) 上，使用 [CloudFlare](https://cloudflare.com) 进行安全处理和 CDN 加速。图片等媒体使用 [acexy](https://imgs.acexy.cn) 、[sm.ms](https://sm.ms) 、[gitee](https://gitee.com) 等进行管理，主题使用清新到爆表功能强大到不行的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)，同时也给想有自己博客的程序员严重推荐[主题作者的博客](https://io-oi.me)。
+本博客使用 [hugo](https://gohugo.io) 驱动，搭建在花钱的`阿里轻量云服务器`上，部署流程用到了自己家的 `Gitlab CI` + `Gitlab Runner`，图库用的也是花钱的`阿里云 OSS` ~~[vercel](https://vercel.com) [`Github Pages`](https://pages.github.com) 上，使用 [CloudFlare](https://cloudflare.com) 进行安全处理和 CDN 加速。图片等媒体使用 [acexy](https://imgs.acexy.cn) 、[sm.ms](https://sm.ms) 、[gitee](https://gitee.com) 等进行管理~~，主题使用清新到爆表功能强大到不行但就是不合我的`PR`的 [`MemE` 主题](https://github.com/reuixiy/hugo-theme-meme/)进行的[二次开发](https://github.com/rxrw/hugo-theme-meme/)，同时也给想有自己博客的程序员~~严重~~推荐[主题作者的博客](https://io-oi.me)。
 
 没了，以后想到什么再更新什么吧。
 
 ### 小补充
 
 在 `vercel` 上运行了一个周发现 `百度` 和 `Google` 对我的博客没什么兴趣.. 决定部署到 `github pages` 上了。
+
+### 小小补充
+
+经过一段时间的折腾，把整个流程放到了自己家里，博客部署在阿里云。主要为了快。有免费的，我不用，我就用自己搭的。诶～ 就是玩儿。
