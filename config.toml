@@ -1093,7 +1093,7 @@ params = ["categories", "tags"]
     # 反馈链接的图标
     feedbackIcon = "question"
     # 反馈链接的文本
-    feedbackText = "Edit Me?"
+    feedbackText = "Feedback?"
 
     # 是否显示编辑链接
     displayEditLink = true
