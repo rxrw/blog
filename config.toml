@@ -1074,9 +1074,9 @@ params = ["categories", "tags"]
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://git.opti.io/blog/hugo"
+    repoURL = "https://github.com/rxrw/blog"
     # 编辑地址
-    repoEditURL = ""
+    repoEditURL = "https://github.com/rxrw/blog/blob/master"
 
     # Git 的图标
     gitIcon = "code-branch"
@@ -1093,10 +1093,10 @@ params = ["categories", "tags"]
     # 反馈链接的图标
     feedbackIcon = "question"
     # 反馈链接的文本
-    feedbackText = "想说点啥"
+    feedbackText = "Edit Me?"
 
     # 是否显示编辑链接
-    displayEditLink = false
+    displayEditLink = true
     # 编辑链接的图标
     editIcon = "edit"
     # 编辑链接的文本
