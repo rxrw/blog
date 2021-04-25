@@ -2,7 +2,7 @@
 title: "从《时间简史》谈时空穿越"
 date: 2019-12-01T16:02:20+08:00
 lastmod: 2019-12-01T16:02:20+08:00
-tags: ["感想", "公众号"]
+tags: ["感想", "公众号", "时间", "科学逻辑", "哲学"]
 slug: "Talk-About-Time-Crossing-From-Time-History"
 description: "Talk About Time Crossing From Time History"
 toc: false
