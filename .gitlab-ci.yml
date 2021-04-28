@@ -52,7 +52,7 @@ stages:
   script:
     - python3 main.py $INDEX_PATH
   retry:
-    max: 10
+    max: 2
     when: always
 
 部署到阿里轻量云服务器:
