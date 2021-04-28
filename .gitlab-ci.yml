@@ -51,6 +51,9 @@ stages:
     - pip install algoliasearch
   script:
     - python3 main.py $INDEX_PATH
+  retry:
+    max: 10
+    when: always
 
 部署到阿里轻量云服务器:
   stage: deploy-swas
