@@ -44,11 +44,6 @@ disablePathToLower = false
 relativeURLs = true
 uglyURLs = false
 
-
-[params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags"]
-
 # URL 结构
 [permalinks]
     categories = "/categories/:slug/"
@@ -1340,20 +1335,9 @@ params = ["categories", "tags"]
 
 
     ######################################
-    # 启用搜索
-
-    # 说明：需要开启 `SearchIndex` 的输出
-
-    enableSearch = true
-
-    # 搜索引擎目前支持：lunr, algolia
-    searchEngine = "algolia"
-
-    ######################################
     # 启用Lunr搜索（暂不支持中文）
 
     # 说明：需要开启 `SearchIndex` 的输出
-    # 此选项用于兼容原有 lunr 搜索，优先级较高
 
     enableLunrSearch = false
 
@@ -1361,6 +1345,8 @@ params = ["categories", "tags"]
 
     ######################################
     # Algolia
+
+    enableAlgoliaSearch = true
 
     algoliaIndex = "rxrw"
     algoliaKey = "cb17d0f6d1d71018132f6c59fcfd89fd"
